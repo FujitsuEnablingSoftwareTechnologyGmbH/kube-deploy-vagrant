@@ -1,0 +1,9 @@
+---
+- hosts: all
+  sudo: yes
+  roles:
+    - common
+    - master
+    
+  environment:
+    MASTER_IP: 192.168.123.110

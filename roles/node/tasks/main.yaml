@@ -1,0 +1,4 @@
+---
+
+- name: start worker
+  command: /home/vagrant/kube-deploy/docker-multinode/worker.sh  

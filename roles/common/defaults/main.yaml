@@ -1,0 +1,2 @@
+repo: https://github.com/luxas/kube-deploy.git
+version: docker_multinode

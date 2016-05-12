@@ -1,0 +1,4 @@
+---
+
+- name: start master
+  command: /home/vagrant/kube-deploy/docker-multinode/master.sh

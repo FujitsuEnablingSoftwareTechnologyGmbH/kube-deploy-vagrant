@@ -1,0 +1,36 @@
+---
+
+- name: add Docker repo
+  copy:
+    dest="/etc/yum.repos.d/docker.repo"
+    owner="root"
+    group="root"
+    mode=640
+    src=docker.repo
+    
+- name: install docker-engine
+  yum: name=docker-engine
+  become: True
+
+- name: enable and start docker
+  service: name=docker state=started enabled=yes
+
+- name: install net-tools
+  yum: name=net-tools
+  become: True
+
+- name: install bridge-utils
+  yum: name=bridge-utils
+  become: True
+  
+- name: install git
+  yum: name=git
+  become: True
+  
+- name: checkout kube-deploy
+  git: repo={{ repo }} dest=/home/vagrant/kube-deploy version={{ version }} accept_hostkey=yes
+  become: true
+  become_user: vagrant
+  become_method: sudo
+
+ 
