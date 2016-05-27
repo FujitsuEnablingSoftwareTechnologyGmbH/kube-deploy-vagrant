@@ -10,7 +10,7 @@ def configure_vm(vm, **opts)
     end
     
     vm.provider :libvirt do |domain|
-		domain.memory = opts.fetch(:memory, 2048)
+		domain.memory = opts.fetch(:memory, 4096)
 		domain.cpus = opts.fetch(:cpus, 2)
 		domain.nested = true
 	end

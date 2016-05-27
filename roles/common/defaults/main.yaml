@@ -1,2 +1,2 @@
-repo: https://github.com/luxas/kube-deploy.git
-version: docker_multinode
+repo: https://github.com/kubernetes/kube-deploy.git
+version: master
