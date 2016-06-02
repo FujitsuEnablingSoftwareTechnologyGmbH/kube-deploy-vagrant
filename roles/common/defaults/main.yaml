@@ -1,2 +1,2 @@
-repo: https://github.com/kubernetes/kube-deploy.git
-version: master
+repo: https://github.com/FujitsuEnablingSoftwareTechnologyGmbH/k8s-docker-provisioner.git
+version: experimental-flannel-overlay

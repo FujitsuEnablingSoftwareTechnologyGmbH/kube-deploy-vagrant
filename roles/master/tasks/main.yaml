@@ -1,4 +1,4 @@
 ---
 
 - name: start master
-  command: /home/vagrant/kube-deploy/docker-multinode/master.sh
+  command: /home/vagrant/k8s-docker-provisioner/fragments/master.sh
