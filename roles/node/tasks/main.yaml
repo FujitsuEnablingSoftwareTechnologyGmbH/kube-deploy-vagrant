@@ -1,4 +1,4 @@
 ---
 
 - name: start worker
-  command: /home/vagrant/k8s-docker-provisioner/fragments/worker.sh
+  command: /home/vagrant/kube-deploy/docker-multinode/worker.sh

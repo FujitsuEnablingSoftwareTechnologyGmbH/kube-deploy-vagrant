@@ -1,2 +1,2 @@
-repo: https://github.com/FujitsuEnablingSoftwareTechnologyGmbH/k8s-docker-provisioner.git
-version: experimental-flannel-overlay
+repo: https://github.com/zreigz/kube-deploy.git
+version: cni-plugin

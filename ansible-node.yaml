@@ -7,4 +7,4 @@
     
   environment:
     MASTER_IP: 192.168.123.110
-    FLANNEL_IFACE: eth1
+    NET_INTERFACE: eth1

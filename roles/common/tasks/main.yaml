@@ -33,22 +33,8 @@
   become: True
   
 - name: checkout kube-deploy
-  git: repo={{ repo }} dest=/home/vagrant/k8s-docker-provisioner version={{ version }} accept_hostkey=yes
+  git: repo={{ repo }} dest=/home/vagrant/kube-deploy version={{ version }} accept_hostkey=yes
   become: true
   become_user: vagrant
   become_method: sudo
-
-- name: Create docker bootstrap service
-  template:
-    dest="/usr/lib/systemd/system/docker-bootstrap.service"
-    owner=root
-    group=root
-    mode="640"
-    src="docker-bootstrap.service.j2"
-
-- name: Enable docker-bootstrap
-  command: systemctl enable docker-bootstrap
-
-- name: Start docker-bootstrap
-  command: systemctl restart docker-bootstrap
-
+  
